@@ -28,6 +28,10 @@ function enleverDecor() {
         var value = $(this).html();
         $(this).replaceWith(value);
     });
+    $("del").each(function () {
+        var value = $(this).html();
+        $(this).replaceWith(value);
+    });
     $("h1").each(function () {
         var value = $(this).html();
         $(this).replaceWith(value);
@@ -92,10 +96,12 @@ function colorer() {
     $(".vert").css("color", "green");
     $(".rouge").css("color", "red");
     $(".bleu").css("color", "blue");
+    $(".orange").css("color", "orange");
 }
 
 function semantique() {
     $(".gras").wrap("<b></b>" );
     $(".italique").wrap("<i></i>" );
     $(".souligne").wrap("<u></u>" );
+    $(".barre").wrap("<del></del>" );
 }
